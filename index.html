@@ -241,6 +241,7 @@
     .badge-python { background: #2a2a1a; color: var(--orange); }
     .badge-c { background: #1a1a2a; color: var(--purple); }
     .badge-ts { background: #1a2a3a; color: #58a6ff; }
+    .badge-php { background: #221a2a; color: #a48fd8; }
     .lang-dot {
       width: 10px;
       height: 10px;
@@ -251,6 +252,7 @@
     .lang-dot-python { background: #3572A5; }
     .lang-dot-c { background: #555555; }
     .lang-dot-ts { background: #3178C6; }
+    .lang-dot-php { background: #777BB4; }
 
     /* Sites */
     .sites {
@@ -389,9 +391,29 @@
           <h3><span class="lang-dot lang-dot-c" aria-hidden="true"></span> <a href="https://github.com/orieg/php-judy">PHP Judy</a></h3>
           <a class="gh-link" href="https://github.com/orieg/php-judy" aria-label="View on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
         </div>
-        <p>PHP extension for libJudy &mdash; high-performance sparse dynamic arrays.</p>
+        <p>PHP extension for libJudy &mdash; memory-efficient sparse dynamic arrays for PHP 8.1+. Install via <code>pie install orieg/judy</code>.</p>
         <div class="project-meta">
           <span class="badge badge-c">C</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-card-header">
+          <h3><span class="lang-dot lang-dot-php" aria-hidden="true"></span> <a href="https://packagist.org/packages/orieg/judy-polyfill">Judy Polyfill</a></h3>
+          <a class="gh-link" href="https://github.com/orieg/judy-polyfill" aria-label="View on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+        </div>
+        <p>Pure-PHP fallback for the Judy extension &mdash; same API everywhere, native speed where ext-judy is installed. Parity-verified in CI.</p>
+        <div class="project-meta">
+          <span class="badge badge-php">PHP</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-card-header">
+          <h3><span class="lang-dot lang-dot-php" aria-hidden="true"></span> <a href="https://packagist.org/packages/orieg/judy-cache">Judy Cache</a></h3>
+          <a class="gh-link" href="https://github.com/orieg/judy-cache" aria-label="View on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+        </div>
+        <p>PSR-16 cache with O(range) prefix invalidation, built on Judy’s sorted trie. For Octane, Swoole, RoadRunner, and FrankenPHP workers.</p>
+        <div class="project-meta">
+          <span class="badge badge-php">PHP</span>
         </div>
       </div>
     </div>
